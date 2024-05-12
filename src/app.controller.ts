@@ -10,6 +10,10 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  @Get('/pelin')
+  getPelin() : string {
+    return this.appService.getPeliniSev();
+  }
   @Post('/:token')
   returnWorld(@Param() Param){
     return Param.token;
